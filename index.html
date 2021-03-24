@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello!</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <h1>Light and Sound Memory Game</h1>
+    
+    <p>
+      Repeat the pattern back to win the game!
+    </p>
+    <p id="timer" >
+      Timer:
+    </p>
+    <button id="startBtn" onclick="startGame()">
+      Start
+    </button>
+    <button id="stopBtn" class="hidden" onclick="stopGame()">
+      End
+    </button>
+    
+    <div id="gameButtonArea">
+      <button id="button1" onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone()">
+        <img src="https://cdn.glitch.com/d271b84c-eee7-4712-892a-6acc55c50db9%2F27-275694_cactus-png-clipart-transparent-background-cactus-clipart.jpg?v=1616572984934">
+      </button>
+      <button id="button2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone()">
+        <img src="https://cdn.glitch.com/d271b84c-eee7-4712-892a-6acc55c50db9%2F84-842085_water-drop-clip-art-droplets-clipart-transparent-png.png?v=1616573075311">
+      </button>
+      <button id="button3" onclick="guess(3)" onmousedown="startTone(3)" onmouseup="stopTone()">
+        <img src="https://cdn.glitch.com/d271b84c-eee7-4712-892a-6acc55c50db9%2Fpngtree-fire-logo-icon-design-template-vector-png-image_705401.jpg?v=1616573879837">
+      </button>
+      <button id="button4" onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone()">
+        <img src="https://cdn.glitch.com/d271b84c-eee7-4712-892a-6acc55c50db9%2Funnamed.gif?v=1616573935308">
+      </button>
+      <button id="button5" onclick="guess(5)" onmousedown="startTone(5)" onmouseup="stopTone()">
+        <img src="https://cdn.glitch.com/d271b84c-eee7-4712-892a-6acc55c50db9%2Fimages.jpg?v=1616573963730">
+      </button>
+    </div>
+
+  </body>
+</html>
