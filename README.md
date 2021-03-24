@@ -4,7 +4,7 @@
 
 Submitted by: **Dylan Zhang**
 
-Time spent: **2** hours spent in total
+Time spent: **2.5** hours spent in total
 
 Link to project: https://glitch.com/edit/#!/light-sound-memory
 
@@ -44,16 +44,20 @@ Here's a walkthrough of implemented user stories:
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
+
 geeksforgeeks.org
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
-[YOUR ANSWER HERE]
+
+A challenge I encountered in this project was figuring out how to use HTML, JavaScript, and CSS together to implement features most effectively. An example of this is when I tried to figure out how to display images on top of the buttons when they were pressed. I initially thought of using DOM methods in JavaScript and utilize the 'hidden' class name on the images. However, this would be very tedious as I would need to write functions to add and remove the 'hidden' class name, and call these functions in HTML as the buttons were pressed and released. To implement this more cleanly, I figured I could use CSS as it would allow me to directly set the properties for all the images depending on their respective buttons' states. After doing a little research into CSS selectors, I was able to use CSS to make the images work properly in just a few lines of code. Overall, I tried to familiarize myself with the variety of features that each of HTML, JavaScript, and CSS offer so that I could implement features cleanly.
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
-[YOUR ANSWER HERE]
+
+I'd like to get a better understanding of what else is possible through web development. The combination of HTML, JavaScript, and CSS offers a lot of flexibility and it seems like there are a lot of ways to be creative with these languages. So, I am very curious about what else I could create through web development, and what I would need to learn to do so. Also, I'd like to know more about the different frameworks and libraries that are used and what they offer, such as React, Angular, jQuery, etc.
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
-[YOUR ANSWER HERE]
+
+I would spend the time fixing some of the issues with the current game, as well as adding new features. For example, I would make it so that the user is blocked from pressing any of the buttons as the sequence is playing out. This way the user would not be able to potentially cause the next hint to play as the current one is playing. I would also add new features, such as a score system. This would improve the experience of playing the game, as instead of simply receiving a "You win!" message, the player would be rewarded with points (if they did well) and would be able to see their progress.
 
 
 
