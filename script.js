@@ -1,6 +1,7 @@
 // global constants
 const cluePauseTime = 333; //how long to pause in between clues
 const nextClueWaitTime = 1000; //how long to wait before starting playback of the clue sequence
+const timelimit = 5; //seconds for each turn
 
 //Global Variables
 var pattern = [2, 2, 4, 3, 2, 1, 2, 4];
@@ -11,7 +12,7 @@ var volume = 0.1; //between 0.0 and 1.0
 var guessCounter = 0;
 var clueHoldTime = 1000; //how long to hold each clue's light/sound
 var strikes = 3;
-var time = 5;
+var time = timelimit;
 var timer;
 
 function startGame() {
@@ -96,11 +97,11 @@ function updateTime(){
   time -= 1;
 }
 
-//stop timer and reset to 5 sec
+//stop timer and reset to time limit
 function resetTime(){
   clearInterval(timer);
   document.getElementById("timer").innerHTML = "Timer: ";
-  time = 5;
+  time = timelimit;
 }
 
 function guess(btn){
@@ -144,6 +145,7 @@ const freqMap = {
   5: 523.3
 }
 function playTone(btn,len){ 
+  document.getElementById("note"+btn).play();
   o.frequency.value = freqMap[btn]
   g.gain.setTargetAtTime(volume,context.currentTime + 0.05,0.025)
   tonePlaying = true
