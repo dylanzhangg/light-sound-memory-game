@@ -17,7 +17,6 @@ var timer;
 function startGame() {
   //initialize game variables
   // random pattern generation
-  pattern = [];
   for (let i = 0; i < 8; i++){
     pattern[i] = Math.ceil(Math.random()*5);
   }
